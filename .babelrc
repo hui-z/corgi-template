@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "es2015",
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "syntax-flow",
+    "transform-export-extensions",
+    "transform-flow-strip-types",
+    ["transform-runtime", {
+      "helpers": true,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ],
+  "ignore": [
+    "node_modules/babel-runtime/**/*.js",
+    "node_modules/core-js/**/*.js",
+    "node_modules/regenerator-runtime/**/*.js",
+    "node_modules/lodash/**/*.js",
+    "node_modules/lodash.*/**/*.js",
+    "node_modules/underscore/**/*.js"
+  ]
+}
